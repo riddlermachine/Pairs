@@ -7,6 +7,9 @@ SOURCES += main.cpp \
     Cell.cpp \
     Field.cpp
 
+OTHER_FILES += \
+    main.qml
+
 RESOURCES += qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
