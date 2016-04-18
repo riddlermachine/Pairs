@@ -9,6 +9,7 @@ SOURCES += main.cpp \
 
 OTHER_FILES += \
     main.qml
+    CellItem.qml
 
 RESOURCES += qml.qrc
 
