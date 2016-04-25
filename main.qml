@@ -1,11 +1,12 @@
 import QtQuick 2.3
 import QtQuick.Window 2.2
+
 import Pairs 1.0
 
 Window {
     visible: true
-    width: 470
-    height: 460
+    width: 800
+    height: 600
     Field {
         id: field
     }
@@ -26,10 +27,8 @@ Window {
                 model: field.width * field.height
 
                 CellItem {
-                id: cellItem
+                    id: cellItem
                 }
-
-
             }
         }
     }
