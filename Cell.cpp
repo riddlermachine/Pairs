@@ -21,3 +21,13 @@ void Cell::setKey(int key)
     m_key = key;
     emit keyChanged(key);
 }
+
+void Cell::open()
+{
+    if (m_open) {
+        return;
+    }
+
+    m_open = true;
+    emit openChanged();
+}

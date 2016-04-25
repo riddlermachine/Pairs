@@ -8,15 +8,17 @@ Flipable {
     id: flipable
     width: 40
     height: 40
-    property bool flipped: false
+    property bool flipped: cell.open
+
+    property Cell cell: field.cellAt(
+                            index % field.width,
+                            index / field.width)
 
     front: Rectangle {
         id: cellItem1
         width: 48
         height: 32
         color: "#d5d5d5"
-        property Cell cell: field.cellAt(index % field.width,
-                                         index / field.width)
     }
     back: Rectangle {
         id: cellItem
@@ -64,6 +66,6 @@ Flipable {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: flipable.flipped = !flipable.flipped
+        onClicked: cell.open()
     }
 }
