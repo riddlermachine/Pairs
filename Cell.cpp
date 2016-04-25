@@ -30,4 +30,6 @@ void Cell::open()
 
     m_open = true;
     emit openChanged();
+    emit cellOpened(this);
+
 }

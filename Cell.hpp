@@ -24,6 +24,7 @@ public slots:
 signals:
     void keyChanged(int key);
     void openChanged();
+    void cellOpened(Cell *cell);
 
 private:
     int m_key;
