@@ -9,7 +9,7 @@ Cell::Cell(QObject *parent) :
     QObject(parent),
     m_key(0)
 {
-
+    m_open = false;
 }
 
 void Cell::setKey(int key)

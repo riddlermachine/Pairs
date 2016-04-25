@@ -8,7 +8,7 @@ Flipable {
     id: flipable
     width: 40
     height: 40
-    property bool flipped: cell.open
+    property bool flipped: cell.isOpen
 
     property Cell cell: field.cellAt(
                             index % field.width,
@@ -60,7 +60,7 @@ Flipable {
         NumberAnimation {
             target: rotation
             property: "angle"
-            duration: 4000
+            duration: 400
         }
     }
 

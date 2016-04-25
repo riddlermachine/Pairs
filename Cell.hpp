@@ -7,7 +7,7 @@ class Cell : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(int key READ key NOTIFY keyChanged)
-    Q_PROPERTY(bool open READ isOpen NOTIFY openChanged)
+    Q_PROPERTY(bool isOpen READ isOpen NOTIFY openChanged)
 
 public:
     explicit Cell(QObject *parent = 0);
